@@ -279,3 +279,85 @@
 # print([i**3 for i in range(2,100,2)])
 
 """ 31. Задать массив из 8 элементов и вывести их на экран  """
+# print([i for i in range(2**3)])
+
+""" 32. Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран """
+# mylist = []
+# for i in range(4):
+#     mylist.append(0)
+#     for j in range(1):
+#         mylist.append(1)
+# print(mylist)
+"""  Задать массив из 12 элементов, заполненных числами 
+     из [0,9]. Найти сумму положительных/отрицательных элементов массива """
+# def massive_huge_dick(a,b):
+#     mylist = []
+#     positive = 0
+#     negative = 0
+#     for i in range(a,b+1):
+#         mylist.append(i)
+#         if i < 0:
+#             negative += i
+#         elif i > 0:
+#             positive += i
+#     return print(f'Массив - {mylist}\nCумма положительных - {positive}\nСумма отрицательных - {negative}')
+# massive_huge_dick(-2,9)
+""" 34. Написать программу замену элементов массива на противоположные """ 
+# import random
+# def exchange(massive):
+#     print(massive)
+#     for i in range(len(massive)):
+#         massive[i] = massive[i] * (-1)
+#     return print(f'{massive}')
+# exchange([random.randint(-20,20) for i in range(1,10)])
+""" 35. Определить, присутствует ли в заданном массиве, некоторое число """
+# import random 
+# mylist = ([random.randint(1,10) for x in range(6)])
+# def golden_num(number,massive):
+#     qqq = 0
+#     for i in massive:
+#         if i == number:
+#             qqq += i
+#     return True if qqq > 0 else False
+
+# print(golden_num(2,mylist))
+# print(mylist)
+""" 36. Задать массив, заполнить случайными положительными трёхзначными числами.    
+     Показать количество нечетных\четных чисел """
+# import random
+# myl = ([random.randint(-999,999) for i in range(10)])
+# negative = 0
+# positive = 0
+# for i in myl:
+#     if i > 0:
+#         positive += 1
+#     else:
+#         negative += 1
+# print(negative,positive)
+""" 37. В одномерном массиве из 123 чисел найти количество элементов из отрезка [10,99] """
+# myl = [i for i in range(1,124)]
+# count = 0
+# for i in myl:
+#     if 10 <= i < 99:
+#         count += 1
+# print(count)
+""" 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции """
+# summ = 0
+# myl = [i for i in range(1,10+1)]
+# for index in myl:
+#     if index % 2 != 0:
+#         summ += myl[index]
+# print(summ)
+""" 39. Найти произведение пар чисел в одномерном массиве.
+     Парой считаем первый и последний элемент, второй и предпоследний и т.д. """
+# myl = ([i for i in range(11)])
+# i = 0
+# print(myl)
+
+
+""" 40. В Указанном массиве вещественных
+ чисел найдите разницу между максимальным и минимальным элементом """
+# import random
+# myl = ([random.randint(10,99)for x in range(1,11)])
+# print(myl)
+# print(max(myl) - min(myl))

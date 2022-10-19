@@ -302,7 +302,7 @@
 #             positive += i
 #     return print(f'Массив - {mylist}\nCумма положительных - {positive}\nСумма отрицательных - {negative}')
 # massive_huge_dick(-2,9)
-""" 34. Написать программу замену элементов массива на противоположные """ 
+""" 34. Написать программу замену элементов массива на противоположные """
 # import random
 # def exchange(massive):
 #     print(massive)
@@ -311,7 +311,7 @@
 #     return print(f'{massive}')
 # exchange([random.randint(-20,20) for i in range(1,10)])
 """ 35. Определить, присутствует ли в заданном массиве, некоторое число """
-# import random 
+# import random
 # mylist = ([random.randint(1,10) for x in range(6)])
 # def golden_num(number,massive):
 #     qqq = 0
@@ -350,11 +350,20 @@
 # print(summ)
 """ 39. Найти произведение пар чисел в одномерном массиве.
      Парой считаем первый и последний элемент, второй и предпоследний и т.д. """
-# myl = ([i for i in range(11)])
-# i = 0
+# import random
+# myl = ([random.randint(1,10) for i in range(11)])
 # print(myl)
-
-
+# i = 0
+# summ = 0
+# size = len(myl)
+# if size % 2 != 0:
+#      print('Массив содержит нечетное количество чисел.')
+# else:    
+#      while i < size:
+#           summ = summ + (myl[i] * myl[size-1])
+#           i += 1
+#           size = size-1
+#      print(summ)
 """ 40. В Указанном массиве вещественных
  чисел найдите разницу между максимальным и минимальным элементом """
 # import random

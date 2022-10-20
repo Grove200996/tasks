@@ -12,16 +12,15 @@
 # print(summ)
 
 """ 0. Вывести квадрат числа."""
-# num = (int(input()))
-# print(num ** 2)
+# quad = lambda x: x**2
+# print(quad(5))
 
 """1. По двум заданным числам проверять является ли первое квадратом второго"""
-# num_1 = int(input())
-# num_2 = int(input())
-# if num_1 ** 2 == num_2:
-#     print('it is')
-# else:
-#     print("no, it's not")
+# def is_quad_1(x,y)
+#    if x ** 2 == y:
+#         return print('it is')
+#    else:
+#         return print("no, it's not")
 """2. Даны два числа. Показать большее и меньшее число"""
 # num_1 = int(input())
 # num_2 = int(input())
@@ -156,12 +155,13 @@
 # else:
 #     print(days[number-1])
 """ 17. По двум заданным числам проверять является ли одно квадратом другого """
-# num_1 = int(input())
-# num_2 = int(input())
-# if num_1 ** 2 == num_2 or num_2 ** 2 == num_1:
-#     print('it is')
-# else:
-#     print("no, it's not")
+
+# def is_quad(x,y):
+#      if x ** 2 == y or y ** 2 == x:
+#           return print('it is')
+#      else:
+#           return print("no, it's not")
+# is_quad(4,2)
 
 """ 19-20. Определить номер четверти плоскости
     в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0 """
@@ -343,7 +343,7 @@
 # print(count)
 """ 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции """
 # summ = 0
-# myl = [i for i in range(1,10+1)]
+# myl = [i for i in range(1, 10+1)]
 # for index in myl:
 #     if index % 2 != 0:
 #         summ += myl[index]
@@ -358,7 +358,7 @@
 # size = len(myl)
 # if size % 2 != 0:
 #      print('Массив содержит нечетное количество чисел.')
-# else:    
+# else:
 #      while i < size:
 #           summ = summ + (myl[i] * myl[size-1])
 #           i += 1
@@ -370,3 +370,61 @@
 # myl = ([random.randint(10,99)for x in range(1,11)])
 # print(myl)
 # print(max(myl) - min(myl))
+
+""" Почувствуй себя лидом*
+41. Выяснить являются ли три числа сторонами треугольника """
+# def triangle_qm(a,b,c):
+#      if a+b>c and b+c>a and a+c>b:
+#           return True
+#      else:
+#           return False
+# print(triangle_qm(4,3,6))
+
+""" 42. Определить сколько чисел больше 0 введено с клавиатуры """
+
+
+# def more_than_zero(*numbers):
+#     count = 0
+#     for i in numbers:
+#         if i > 0:
+#             count += 1
+#     return count
+
+
+# print(more_than_zero(-2, -3, 1, 3, 4))
+
+""" 43. Написать программу преобразования десятичного числа в двоичное """
+
+
+# def system(num):
+#     number = ''
+#     num_1 = 0
+#     while num > 0:
+#         num_1 += num % 2
+#         num = num // 2
+#         number += str(num_1)
+#         num_1 = 0
+#     return number[::-1]
+
+
+# print(system(156))
+""" 45. Показать числа Фибоначчи """
+
+
+# def fibonacchi(n):
+#      f1 = 1
+#      f2 = 1
+#      lists = []
+#      while n > 2:
+#           f1, f2 = f2, f2+f1
+#           n -= 1
+#           lists.append(f2)
+#      return lists
+# print(fibonacchi(15))
+
+""" 47. Написать программу копирования массива """
+# massive = ([i for i in range(-5, 5)])
+
+# massive_copy = []
+# for i in massive:
+#     massive_copy.append(i)

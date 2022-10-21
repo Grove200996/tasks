@@ -288,7 +288,7 @@
 #     for j in range(1):
 #         mylist.append(1)
 # print(mylist)
-"""  Задать массив из 12 элементов, заполненных числами 
+"""  Задать массив из 12 элементов, заполненных числами
      из [0,9]. Найти сумму положительных/отрицательных элементов массива """
 # def massive_huge_dick(a,b):
 #     mylist = []
@@ -322,7 +322,7 @@
 
 # print(golden_num(2,mylist))
 # print(mylist)
-""" 36. Задать массив, заполнить случайными положительными трёхзначными числами.    
+""" 36. Задать массив, заполнить случайными положительными трёхзначными числами.
      Показать количество нечетных\четных чисел """
 # import random
 # myl = ([random.randint(-999,999) for i in range(10)])
@@ -428,3 +428,19 @@
 # massive_copy = []
 # for i in massive:
 #     massive_copy.append(i)
+
+
+class Phone:
+    def __init__(self, phone_model):
+        self.model = phone_model
+        self.loading(self.model)
+
+    def loading(self, model):
+        print(f'{model} is loading')
+
+    def call(self):
+        print('phone is calling')
+
+
+phone = Phone('nokia')
+phone.call()

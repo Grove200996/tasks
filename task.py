@@ -436,10 +436,13 @@ class Phone:
         self.loading(self.model)
 
     def loading(self, model):
-        print(f'{model} is loading')
+        print(f'{model} is loading...')
 
     def call(self):
         print('phone is calling')
+
+    def music_player(self):
+        print('your favorite song is playing')
 
 
 phone = Phone('nokia')

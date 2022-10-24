@@ -430,20 +430,57 @@
 #     massive_copy.append(i)
 
 
-class Phone:
-    def __init__(self, phone_model):
-        self.model = phone_model
-        self.loading(self.model)
+# class Phone:
+#     def __init__(self, phone_model):
+#         self.model = phone_model
+#         self.loading(self.model)
 
-    def loading(self, model):
-        print(f'{model} is loading...')
+#     def loading(self, model):
+#         print(f'{model} is loading...')
 
-    def call(self):
-        print('phone is calling')
+#     def call(self):
+#         print('phone is calling')
 
-    def music_player(self):
-        print('your favorite song is playing')
+#     def music_player(self):
+#         print('your favorite song is playing')
 
 
-phone = Phone('nokia')
-phone.call()
+# phone = Phone('nokia')
+# phone.call()
+
+
+class Person:
+    def __init__(self, name, surname, age, wage):
+        self.name = name
+        self.surname = surname
+        self.age = age
+        self.wage = wage
+
+    def name(self):
+        return name
+
+    def surname(self):
+        return surname
+
+    def age(self):
+        return age
+
+    def wage(self):
+
+        return wage
+
+
+class Boss(Person):
+    def __init__(self, name, surname, age, wage, car):
+        super().__init__(name, surname, age, wage)
+        self.car = car
+
+    def car(self):
+        return f'boss has {car}'
+
+
+p = Person('Евгений', "Степанов", 26, 100.000)
+b = Boss('Евгений', "Степанов", 26, 100.000, 'lexus')
+print(p.age)
+print(b.name)
+print(b.car)

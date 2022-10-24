@@ -33,6 +33,10 @@
 
 * **git checkout -b <branch_name>** - создать новую ветку и сразу перейти в неё
 
+* **git commit -a (shift + I, пишем коммент,escape, shift + :, wq)**
+
+* **git log --oneline --graph --all**
+
 
 >Чтобы вызвать ранее введённую команду,
 >пользуемся стрелками на клавиатуре.
@@ -41,4 +45,3 @@
 
 **echo file > file's name** - создать файл через терминал, где *file* - содержимое файла.
 
-git commit -a (shift + I, пишем коммент,escape, shift + :, wq)

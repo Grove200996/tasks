@@ -1,4 +1,7 @@
 """ Калькулятор, способный производить четыре действия!!"""
+from colorama import init
+from colorama import Fore, Back, Style
+init()
 
 import time
 class Calculator:
@@ -34,9 +37,11 @@ number = 0
 x = 0
 options = {1: 'сложение', 2: 'вычетание', 3: 'умножение',
            4: 'деление', 6: 'выход', 5: 'сбросить сумму'}
+print( Fore. BLUE )
+print(Style.BRIGHT)
 print(f'*'*40 + '\nЗдравствуйте! Вы запустили калькулятор.\n' + ('*'*40))
 
-
+print( Fore. LIGHTWHITE_EX )
 while number != 6:
     time.sleep(1)
     print(f'Выберите одну из предложенных функций:'
@@ -58,6 +63,7 @@ while number != 6:
         continue
 
     if number == 6:
+        print( Fore. BLUE )
         selection()
         print(f'Спасибо что воспользовались моим дебильным калькулятором :)')
         selection()
